@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifdd-ts-core"
+version = "26.10.2"
+description = "Shared runtime of the IFDD time series API (ifdd-ts-api)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+
+dependencies = [
+    "fastapi~=0.142.2",
+    "uvicorn[standard]~=0.54.0",
+    "pydantic~=2.13.5",
+    "pydantic-settings~=2.15.0",
+    "httpx~=0.28.1",
+    "pyld~=3.3.0",
+    "cachetools~=7.2.1",
+    "PyJWT[crypto]~=2.15.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest~=9.1.1",
+    "pytest-asyncio~=1.4.0",
+    "pytest-cov",
+    "httpx2",
+]
+
+[project.urls]
+Repository = "https://github.com/ifdd-de/ts-core"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+# Swagger UI, ReDoc and the start script of the /docs and /redoc pages
+# (ifdd.ts.core.docs_ui); the wheel must carry them.
+[tool.setuptools.package-data]
+"ifdd.ts.core" = ["docs_assets/*.json", "docs_assets/*/*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

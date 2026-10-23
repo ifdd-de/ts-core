@@ -12,7 +12,7 @@ license = "BSD-3-Clause"
 license-files = ["LICENSE"]
 
 dependencies = [
-    "fastapi~=0.142.2",
+    "fastapi>=0.142.2,<0.151.0",
     "uvicorn[standard]~=0.54.0",
     "pydantic>=2.13.5,<2.15.0",
     "pydantic-settings>=2.15,<2.17",

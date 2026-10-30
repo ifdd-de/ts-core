@@ -17,8 +17,8 @@ env:
   # The release binary of VictoriaMetrics used by tests/test_vm_integration.py,
   # the same version as in the ifdd-ts template; started with deduplication
   # like there.
-  VM_VERSION: v1.153.0
-  VM_SHA256: 1b495bde563825cf83dc7c0425a9d8fa03e7214858e0949f9177efc6bb1f8bfc
+  VM_VERSION: v1.155.0
+  VM_SHA256: 7180e65913d55ab99c0be8f4a3ad17a0fafe5598a21ff6327fecba3190d7b176
 
 jobs:
   test:

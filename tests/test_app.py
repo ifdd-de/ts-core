@@ -15,7 +15,7 @@ def _client(**overrides):
 
 
 def test_everything_is_below_the_prefix(api):
-    assert api.get("/tsapi/version").json() == {"version": "26.10.2"}
+    assert api.get("/tsapi/version").json() == {"version": "26.10.3"}
     assert api.get("/version").status_code == 404
     assert api.get("/openapi.json").status_code == 404
     assert api.get("/docs").status_code == 404

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ifdd-ts-core"
-version = "26.10.3"
+version = "26.11.1"
 description = "Shared runtime of the IFDD time series API (ifdd-ts-api)"
 readme = "README.md"
 requires-python = ">=3.11"

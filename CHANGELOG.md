@@ -2,11 +2,13 @@
 
 The version scheme follows the other IFDD repositories: `YY.MM.N`.
 
-## [Unreleased]
+## [26.11.1] - 2026-11-14
 
 - Package metadata: maintainers `ifdd.de contributors <maintainers@ifdd.de>`
   and project URLs (homepage https://ifdd.de/packages/, repository). PyPI shows
-  them with the next release.
+  them from this release on.
+- Documentation check without `sphinxcontrib-mermaid`; the pages have no
+  diagrams.
 
 ## [26.10.3] - 2026-10-30
 

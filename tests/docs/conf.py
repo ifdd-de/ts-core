@@ -4,7 +4,6 @@
 project = "ifdd-ts-core (check)"
 extensions = [
     "myst_parser",
-    "sphinxcontrib.mermaid",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinxcontrib.openapi",

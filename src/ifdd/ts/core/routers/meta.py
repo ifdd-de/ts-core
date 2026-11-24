@@ -16,7 +16,7 @@ router = APIRouter(tags=["meta"])
 @router.get(
     "/version",
     summary="Version of the instance (no token needed)",
-    responses={200: {"content": {"application/json": {"example": {"version": "26.11.1"}}}}},
+    responses={200: {"content": {"application/json": {"example": {"version": "26.11.11"}}}}},
     openapi_extra={"security": []},
 )
 async def version() -> dict:
